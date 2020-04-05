@@ -1,10 +1,15 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
 .nav-list
-  height: 10px
+  height: 10vh
   width: 50%
   display: flex
   align-items: center
   justify-content: space-around
-  margin-left: auto
+  margin: 0 0 0 auto
   list-style: none
   font-size: 16px
 
@@ -12,24 +17,34 @@
   color: #000
   text-decoration: none
   font-size: 18px
+
 .home, .about
   height: 90vh
   position: absolute
   width: 100%
+
   &-content
     height: 100%
     display: flex
     justify-content: space-evenly
     align-items: center
+    color: #fff
+
     img
       height: 70%
 
     h1
       font-size: 50px
-      margin: 30px 0
+      margin: 0 0 30px 0
 
     p
       font-size: 20px
+
+  &-presentation
+    background: rgba(27, 27, 27, 0.52)
+    padding: 20px
+    border-radius: 1em
+
 .home
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)
 

@@ -12195,8 +12195,7 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
   }, {
     key: "out",
     value: function out(_ref2) {
-      var from = _ref2.from,
-          done = _ref2.done;
+      var done = _ref2.done;
       done();
     }
   }]);

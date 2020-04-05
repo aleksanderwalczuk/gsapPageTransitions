@@ -1,5 +1,5 @@
 import Highway from "@dogstudio/highway/build/highway";
-import {Tween, TimelineLite} from 'gsap'
+import {TimelineLite} from 'gsap'
 
 class Fade extends Highway.Transition {
     in({from, to, done}) {
@@ -15,7 +15,7 @@ class Fade extends Highway.Transition {
             .fromTo(to.children[0], 2, {opacity: '0'}, {opacity: 1})
     }
 
-    out({from, done}) {
+    out({done}) {
         done()
     }
 }
